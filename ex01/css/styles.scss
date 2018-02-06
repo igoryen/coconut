@@ -412,7 +412,24 @@
 
                     display: block;
                     height: auto;
+                    
+                    // -webkit-animation: slide-down .3s ease-out;
+                    // animation: slide-down .3s ease-out;
                 }
+                
+                // @keyframes slide-down {
+                //       0% { opacity: 0; transform: translateY(-20%); }   
+                //     100% { opacity: 1; transform: translateY(0); }
+                // }                
+
+                // @-webkit-keyframes slide-down {
+                //       0% { opacity: 0; -webkit-transform: translateY(-30%); }   
+                //     100% { opacity: 1; -webkit-transform: translateY(0); }
+                // }
+                // @-moz-keyframes slide-down {
+                //       0% { opacity: 0; -moz-transform: translateY(-30%); }   
+                //     100% { opacity: 1; -moz-transform: translateY(0); }
+                // }
             }
 
             .carol {
@@ -579,6 +596,7 @@
 
             li {
                 a, span {
+                    padding: 17px 15px;
                     // justify-content: center;
                     justify-content: flex-start;
                 }
@@ -605,6 +623,50 @@
                 a {
                     // color: #fff;
                 }
+            }
+        }
+
+
+        .barbara {
+            // position: relative;
+            // display: inline-block;
+
+            &:hover {
+                // .arrow {
+                //     // font-size: 10px !important;
+                //     &::after {
+                //         content: "\25B6\ ";
+                //         // font-size: 12px;
+                //         transform: rotate(90deg);
+                //     }
+                // }
+                .betty {
+
+                    display: block;
+                    height: auto;
+                    
+                    // -webkit-animation: slide-down .3s ease-out;
+                    animation: slide-down .3s ease-out;
+                }
+                
+                @keyframes slide-down {
+                      0% { opacity: 0; transform: translateY(-20%); }   
+                    100% { opacity: 1; transform: translateY(0); }
+                }                
+
+                // @-webkit-keyframes slide-down {
+                //       0% { opacity: 0; -webkit-transform: translateY(-30%); }   
+                //     100% { opacity: 1; -webkit-transform: translateY(0); }
+                // }
+                // @-moz-keyframes slide-down {
+                //       0% { opacity: 0; -moz-transform: translateY(-30%); }   
+                //     100% { opacity: 1; -moz-transform: translateY(0); }
+                // }
+            }
+
+            .carol {
+                // white-space: wrap;
+                // font-size: 12px;
             }
         }
 

@@ -313,6 +313,7 @@ body {
     margin-bottom: 0px;
   }
   .brian li a, .brian li span {
+    padding: 17px 15px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -330,6 +331,36 @@ body {
   .david > li, .deborah > li {
     max-width: none;
     max-height: none;
+  }
+  .barbara:hover .betty {
+    display: block;
+    height: auto;
+    -webkit-animation: slide-down .3s ease-out;
+            animation: slide-down .3s ease-out;
+  }
+  @-webkit-keyframes slide-down {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20%);
+              transform: translateY(-20%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20%);
+              transform: translateY(-20%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
   .betty {
     border: 1px solid transparent;
