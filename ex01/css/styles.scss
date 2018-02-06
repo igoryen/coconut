@@ -244,7 +244,7 @@
 //      MEDIA QUERIES
 //=========================================
     
-    @media screen and (max-width: 2200px) {
+    @media screen and (max-width: 2700px) {
 
         #opennav, #closenav {
             display: none;
@@ -386,8 +386,9 @@
         }
 
         .arrow {
-            padding: 0 0 0 5px !important;
-            font-size: 16px !important;
+            padding: 0 5px !important;
+            width: 6px;
+            font-size: 12px !important;
             &::after {
                  content: "\25B6\ ";
                  
@@ -400,15 +401,17 @@
 
             &:hover {
                 .arrow {
-                    font-size: 10px !important;
+                    // font-size: 10px !important;
                     &::after {
-                        content: "\25BC\ ";
+                        content: "\25B6\ ";
                         // font-size: 12px;
+                        transform: rotate(90deg);
                     }
                 }
                 .betty {
 
                     display: block;
+                    height: auto;
                 }
             }
 
@@ -505,6 +508,7 @@
                     border: 1px solid $betty-border-color;
                     top: -6px;
                     left: unset;
+                    left: inherit; // IE doesn't know "unset"
                     right: 10px;
                     position: absolute;
                     transform: rotate(45deg);
@@ -564,10 +568,11 @@
         .brian {
             // margin-top: 86px;
             // position: fixed;
-            overflow-y: scroll;
+            // overflow-y: scroll;
             display: block;
             margin-top: 0px;
             margin-bottom: 0px;
+            // width: auto;
 
             // padding: 0 20px;
 
@@ -585,6 +590,7 @@
             flex-wrap: nowrap;
             // justify-content: flex-start;
             height: auto;
+            width: auto;
 
             // background: transparent;
 
@@ -608,10 +614,13 @@
             background-color: rgba(255, 255, 255, 0.05);
             padding: 0 20px;
             position: unset;
+            position: inherit;
             width: 100%;
             max-width: 300px;
             justify-content: flex-start;
             // padding: 0;
+            top: unset;
+            top: inherit;
 
             &::before {
                 content: none;

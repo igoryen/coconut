@@ -133,7 +133,7 @@ body {
   background-color: limegreen;
 }
 
-@media screen and (max-width: 2200px) {
+@media screen and (max-width: 2700px) {
   #opennav, #closenav {
     display: none;
   }
@@ -183,8 +183,9 @@ body {
     color: #fff;
   }
   .arrow {
-    padding: 0 0 0 5px !important;
-    font-size: 16px !important;
+    padding: 0 5px !important;
+    width: 6px;
+    font-size: 12px !important;
   }
   .arrow::after {
     content: "\25B6\ ";
@@ -193,14 +194,14 @@ body {
     position: relative;
     display: inline-block;
   }
-  .barbara:hover .arrow {
-    font-size: 10px !important;
-  }
   .barbara:hover .arrow::after {
-    content: "\25BC\ ";
+    content: "\25B6\ ";
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .barbara:hover .betty {
     display: block;
+    height: auto;
   }
   .betty {
     border-bottom-left-radius: 5px;
@@ -261,6 +262,7 @@ body {
     border: 1px solid #ccc;
     top: -6px;
     left: unset;
+    left: inherit;
     right: 10px;
     position: absolute;
     -webkit-transform: rotate(45deg);
@@ -306,7 +308,6 @@ body {
             flex-direction: column;
   }
   .brian {
-    overflow-y: scroll;
     display: block;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -324,6 +325,7 @@ body {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     height: auto;
+    width: auto;
   }
   .david > li, .deborah > li {
     max-width: none;
@@ -334,11 +336,14 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 0 20px;
     position: unset;
+    position: inherit;
     width: 100%;
     max-width: 300px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    top: unset;
+    top: inherit;
   }
   .betty::before {
     content: none;

@@ -27,13 +27,13 @@ $( document ).ready( function(){
 	// 	// console.log( "on click the class is " + $popup.attr("class"));
 
 	// 	if( $popup.is(":visible")) {
-	// 		console.log( $popup.is(":visible"));
-	// 		$popup.css("display", "none");
+	// 		console.log( "betty visible? " + $popup.is(":visible"));
+	// 		$popup.trigger("mouseleave");
 
 	// 	}
-	// 	else {
-	// 		console.log( $popup.is(":visible"));
-	// 	}
+	// 	// else {
+	// 	// 	console.log( $popup.is(":visible"));
+	// 	// }
 		
 	// });
 
