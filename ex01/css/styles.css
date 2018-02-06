@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.donna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.anthony {
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 100%;
+}
+
+.brian {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+}
+
+.brian li, .brian ul {
+  list-style-type: none;
+}
+
+.brian li a, .brian li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  padding: 11px;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+.brian > li:not(.barbara):hover {
+  background-color: greenyellow;
+}
+
+.david,
+.deborah {
+  padding-left: 0;
+}
+
+.carol {
+  z-index: 10;
+}
+
+.carol:hover {
+  cursor: pointer;
+}
+
+.betty {
+  background-color: #fafafa;
+}
+
+.betty > li:not(.charles) {
+  border: 1px;
+}
+
+.betty > li:not(.charles):hover {
+  background-color: pink;
+}
+
+.charles {
+  width: 100%;
+}
+
+.charles span {
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.charles span:hover {
+  background-color: pink;
+}
+
+.charles > ul {
+  padding-left: 15px;
+}
+
+.charles > ul > li:not(.daniel) {
+  border: 1px;
+}
+
+.charles > ul > li:not(.daniel):hover {
+  background-color: gold;
+}
+
+.daniel span:hover {
+  background-color: bisque;
+}
+
+.daniel ul, .daniel ol {
+  padding-left: 15px;
+}
+
+.daniel ul li, .daniel ol li {
+  margin: 0;
+}
+
+.daniel ul li:hover, .daniel ol li:hover {
+  background-color: limegreen;
+}
+
+@media screen and (max-width: 2200px) {
+  #opennav, #closenav {
+    display: none;
+  }
+  .brian {
+    line-height: 18px;
+  }
+  .david, .deborah {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .david > li, .deborah > li {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .david > li:hover, .deborah > li:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .david {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0f62a8), to(#5a9fe2));
+    background: linear-gradient(to bottom, #0f62a8, #5a9fe2);
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100px;
+  }
+  .david > li {
+    max-width: 130px;
+    max-height: 50px;
+  }
+  .david > li a {
+    color: #fff;
+  }
+  .deborah {
+    background: -webkit-gradient(linear, left top, left bottom, from(#5a7ed2), to(#3f6da9));
+    background: linear-gradient(to bottom, #5a7ed2, #3f6da9);
+  }
+  .deborah > li a, .deborah > li span {
+    color: #fff;
+  }
+  .arrow {
+    padding: 0 0 0 5px !important;
+    font-size: 16px !important;
+  }
+  .arrow::after {
+    content: "\25B6\ ";
+  }
+  .barbara {
+    position: relative;
+    display: inline-block;
+  }
+  .barbara:hover .arrow {
+    font-size: 10px !important;
+  }
+  .barbara:hover .arrow::after {
+    content: "\25BC\ ";
+  }
+  .barbara:hover .betty {
+    display: block;
+  }
+  .betty {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-top: 10px;
+    position: absolute;
+    top: 37px;
+    width: 250px;
+    z-index: 2;
+    display: none;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  .betty li {
+    margin-top: 5px;
+    padding-right: 3px;
+  }
+  .betty li a {
+    color: #3f6da9;
+  }
+  .betty.showing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .betty.hidden {
+    display: none;
+  }
+  .betty::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    top: -6px;
+    left: 10px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border-right: transparent;
+    border-bottom: transparent;
+  }
+  .betty.rt {
+    right: 0;
+  }
+  .betty.rt::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    top: -6px;
+    left: unset;
+    right: 10px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border-right: transparent;
+    border-bottom: transparent;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #opennav, #closenav {
+    display: block;
+  }
+  #closenav {
+    background-color: #ccc;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: -22px;
+    padding: 5px 15px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    z-index: 6;
+  }
+  .anthony {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5a9fe2;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brian {
+    overflow-y: scroll;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .brian li a, .brian li span {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .david, .deborah {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: auto;
+  }
+  .david > li, .deborah > li {
+    max-width: none;
+    max-height: none;
+  }
+  .betty {
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0 20px;
+    position: unset;
+    width: 100%;
+    max-width: 300px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .betty::before {
+    content: none;
+  }
+  .betty > li {
+    padding: 5px;
+    margin-top: 0;
+    text-align: left;
+  }
+  .betty > li a {
+    color: #fff;
+  }
+  .david > li:first-child {
+    padding-top: 10px;
+  }
+  .deborah > li:last-child {
+    padding-bottom: 10px;
+  }
+  .charles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .charles span {
+    color: #fff !important;
+    font-weight: normal;
+  }
+  .charles ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .charles > ul {
+    padding-left: 15px;
+  }
+  .daniel ul, .daniel ol {
+    padding-left: 15px;
+  }
+  .barbara {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
