@@ -37,6 +37,37 @@ body {
   width: 100%;
 }
 
+.logo-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.logo-self {
+  background-image: url(../img/nrs_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 132px;
+  z-index: 1;
+}
+
+.logo-decor {
+  background-image: url(../img/world_map.png);
+  background-repeat: no-repeat;
+  margin-left: -107px;
+  margin-top: 10px;
+  margin-bottom: .5em;
+  background-size: contain;
+  padding: 36px 76px;
+}
+
 .brian {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +78,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f62a8), to(#5a9fe2));
+  background: linear-gradient(to bottom, #0f62a8, #5a9fe2);
 }
 
 .brian li, .brian ul {
@@ -161,12 +194,13 @@ body {
     background: rgba(0, 0, 0, 0.2);
   }
   .david {
-    background: -webkit-gradient(linear, left top, left bottom, from(#0f62a8), to(#5a9fe2));
-    background: linear-gradient(to bottom, #0f62a8, #5a9fe2);
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     height: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .david > li {
     max-width: 130px;
@@ -290,6 +324,16 @@ body {
     text-decoration: none;
     z-index: 6;
   }
+  .logo-wrapper {
+    top: 10px;
+  }
+  .logo-self {
+    padding: 0px 103px;
+  }
+  .logo-decor {
+    margin-left: -81px;
+    padding: 18px 49px;
+  }
   .anthony {
     height: 100%;
     width: 0;
@@ -297,7 +341,8 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #5a9fe2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0f62a8), to(#5a9fe2));
+    background: linear-gradient(to bottom, #0f62a8, #5a9fe2);
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -309,8 +354,9 @@ body {
   }
   .brian {
     display: block;
-    margin-top: 0px;
+    margin-top: 82px;
     margin-bottom: 0px;
+    background: transparent;
   }
   .brian li a, .brian li span {
     padding: 17px 15px;

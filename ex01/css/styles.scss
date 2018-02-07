@@ -63,13 +63,65 @@
 //=========================================
 //      MENU MOBILE
 //=========================================
+
+
+    .logo-wrapper {
+        position: absolute;
+        left: 20px;
+        top: 24px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo-self {
+        background-image: url(../img/nrs_logo.png);
+        // background: url(../img/new_header_left.jpg) 1px -20px;
+
+        background-repeat: no-repeat;
+
+        // margin-left: 5em;
+        
+
+        
+
+        // background-size: cover;
+        // padding: 30px 100px;
+
+        
+        background-size: contain;
+        padding: 0px 132px;
+
+        z-index: 1;
+    }
+
+    .logo-decor {
+
+        background-image: url(../img/world_map.png);
+        // background: url(../img/new_header_left.jpg) 1px -20px;
+
+        background-repeat: no-repeat;
+
+        margin-left: -107px;
+
+        margin-top: 10px;
+        margin-bottom: .5em;
+
+        // background-size: cover;
+        // padding: 30px 100px;
+
+        
+        background-size: contain;
+        padding: 36px 76px;
+
+    }
+
     // the list
     .brian {
         display: flex;
-        
         width: 100%;
         flex-direction: column;
         padding-left: 0;
+        background: linear-gradient( to bottom, #0f62a8, #5a9fe2);
         
         li, ul {
             list-style-type: none;
@@ -300,9 +352,10 @@
         }
 
         .david {
-            background: linear-gradient( to bottom, #0f62a8, #5a9fe2);
+            // background: linear-gradient( to bottom, #0f62a8, #5a9fe2);
             justify-content: flex-end;
             height: 100px;
+            align-items: center;
             // display: flex;
             // flex-direction: row;
             // flex-wrap: wrap;
@@ -562,6 +615,20 @@
             z-index: 6;
         }
 
+
+        .logo-wrapper {
+            // display: none;
+            top: 10px;
+        }
+
+        .logo-self {
+            padding: 0px 103px;
+        }
+        .logo-decor {
+            margin-left: -81px;
+            padding: 18px 49px;
+        }
+
         .anthony {
             height: 100%;
             width: 0;
@@ -569,7 +636,9 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #5a9fe2;
+            // background-color: #5a9fe2;
+            background: linear-gradient( to bottom, #0f62a8, #5a9fe2);
+
             // background-color: rgba(0,0,0,.5);
 
             // background: linear-gradient( to bottom, #0f62a8, #5a9fe2);
@@ -587,8 +656,11 @@
             // position: fixed;
             // overflow-y: scroll;
             display: block;
-            margin-top: 0px;
+            // margin-top: 0px;
+            margin-top: 82px;
             margin-bottom: 0px;
+            background: transparent;
+            // z-index: 4;
             // width: auto;
 
             // padding: 0 20px;
