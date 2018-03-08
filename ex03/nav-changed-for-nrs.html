@@ -1,0 +1,218 @@
+<nav class="navbar navbar-expand-md navbar-dark john">
+
+    <a class="navbar-brand logo-wrapper michael" href="#">
+        <div class="logo-self"></div>
+        <div class="logo-decor"></div>
+    </a>
+    
+
+    <button class="navbar-toggler charles" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="navbar-collapse offcanvas-collapse robert" id="navbarsExampleDefault">
+
+        <div class="container-fluid james">
+            
+            <div class="row"  id="header2">
+
+                <h:form prependId="false">
+
+                    <div class="col-1 david">
+                        <a class="navbar-brand logo-wrapper mary" href="#">
+                            <div class="logo-self"></div>
+                            <div class="logo-decor"></div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-11 d-flex align-items-center ">
+                        <ul class="navbar-nav william">
+
+                            <li class="nav-item active">
+                                <s:link class="nav-link" view="/manageAccount/admin/loanInfo.xhtml" rendered="#{s:hasRole('admin')or (identity.credentials.username eq 'supportadmin')}">LoanInfo </s:link>
+                            </li>
+                            <li class="nav-item active">
+                                <s:link class="nav-link" view="/register/indexEmptyCSS.xhtml" action="#{nrsMenu.doHome}">#{msg.home}</s:link>
+                            </li>
+
+                            <li class="nav-item active">
+                                <s:link class="nav-link" view="/solutionsEmptyCSS.xhtml" action="#{nrsMenu.doSol}">#{msg.solution}</s:link>
+                            </li>
+                            <li class="nav-item">
+                                <s:link class="nav-link" view="/newsEmptyCSS.xhtml" action="#{nrsMenu.doNews}">#{msg.News_MainTitle}</s:link>
+                            </li>
+                            <li class="nav-item">
+                                <s:link class="nav-link" view="/contactEmptyCSS.xhtml" action="#{nrsMenu.doContact}">#{msg.contactUs}</s:link>
+                            </li>
+                            <li class="nav-item">
+                                <s:link class="nav-link"  view="/leadership.xhtml" action="#{nrsMenu.doContact}">#{msg.leadership}</s:link>
+                            </li>                            
+                        </ul>
+                    </div>
+
+                </h:form>
+            </div>
+
+            <div class="row" id="header3">
+                <div class="col-12 border-top" >
+                    <ul class="navbar-nav flex-wrap richard" >
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Loan data</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit loan data</a></li>
+
+
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Reassignment</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Reassign lender ARS</a></li>
+                                                <li><a class="dropdown-item" href="#">Reassign law firm</a></li>
+                                                <li><a class="dropdown-item" href="#">Reassign PM company</a></li>
+                                                <li><a class="dropdown-item" href="#">Reassign real estate firm</a></li>
+                                            </ul>
+                                        </li>
+                                        
+
+
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Import/create files</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Import/create files</a></li>
+                                        <li><a class="dropdown-item" href="#">Manual entry</a></li>
+
+
+                                        
+
+
+
+                                    </ul>
+                                </li>
+                                <!-- <li><a class="dropdown-item" href="#">Data</a></li> -->
+                            </ul>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WIP</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="files" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Files</a>
+                            <div class="dropdown-menu" aria-labelledby="files">
+                                <a class="dropdown-item" href="#">Files in process</a>
+                                <a class="dropdown-item" href="#">Closed files</a>
+                                <a class="dropdown-item" href="#">New files</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="loandata" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Loan data</a>
+                            <div class="dropdown-menu" aria-labelledby="loandata">
+                                <a class="dropdown-item" href="#">Master loan info</a>
+                                <a class="dropdown-item" href="#">Event log</a>
+                                <a class="dropdown-item" href="#">Invoice</a>
+                                <a class="dropdown-item" href="#">Revenue</a>
+                                <a class="dropdown-item" href="#">Service provider summary</a>
+                                <a class="dropdown-item" href="#">Master notes</a>
+                                <a class="dropdown-item" href="#">Documents</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Manual WIP</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="legal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Legal</a>
+                            <div class="dropdown-menu" aria-labelledby="legal">
+                                <a class="dropdown-item" href="#">Legal info</a>
+                                <a class="dropdown-item" href="#">Manual process</a>
+                                <a class="dropdown-item" href="#">Title/bancruptcy</a>
+                                <a class="dropdown-item" href="#">Invoice</a>
+                                <a class="dropdown-item" href="#">Notes</a>
+                                <a class="dropdown-item" href="#">Documents</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="propmngrs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Property manager</a>
+                            <div class="dropdown-menu" aria-labelledby="propmngrs">
+                                <a class="dropdown-item" href="#">PM/property info</a>
+                                <a class="dropdown-item" href="#">Inspection/utilities</a>
+                                <a class="dropdown-item" href="#">Invoice</a>
+                                <a class="dropdown-item" href="#">Quotes</a>
+                                <a class="dropdown-item" href="#">Notes</a>
+                                <a class="dropdown-item" href="#">Documents</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="re" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Real estate</a>
+                            <div class="dropdown-menu" aria-labelledby="re">
+                                <a class="dropdown-item" href="#">Agent/listing</a>
+                                <a class="dropdown-item" href="#">Offer/sale</a>
+                                <a class="dropdown-item" href="#">CMA/appraisal</a>
+                                <a class="dropdown-item" href="#">Invoice</a>
+                                <a class="dropdown-item" href="#">Quotes</a>
+                                <a class="dropdown-item" href="#">Notes</a>
+                                <a class="dropdown-item" href="#">Documents</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="appraisal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appraisal</a>
+                            <div class="dropdown-menu" aria-labelledby="appraisal">
+                                <a class="dropdown-item" href="#">Appraisal info</a>
+                                <a class="dropdown-item" href="#">Notes</a>
+                                <a class="dropdown-item" href="#">Documents</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="mtginsurer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mortgage insurer</a>
+                            <div class="dropdown-menu" aria-labelledby="mtginsurer">
+                                <a class="dropdown-item" href="">Mortgage insurer</a>
+                                <a class="dropdown-item" href="">Notes</a>
+                                <a class="dropdown-item" href="">Documents</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="reports" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports</a>
+                            <div class="dropdown-menu" aria-labelledby="reports">
+                                <a class="dropdown-item" href="">Reports</a>
+                                <a class="dropdown-item" href="">Invoice consolidation report</a>
+                                <a class="dropdown-item" href="">Legal invoice</a>
+                                <a class="dropdown-item" href="">PM invoice</a>
+                                <a class="dropdown-item" href="">PM quote</a>
+                                <a class="dropdown-item" href="">Real estate invoice</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Status</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</nav>
